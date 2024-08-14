@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/6d/1d/39/6d1d39e6fa48dcd208f1b3c8516d0487.gif);
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+.menu{
+    height: 70%;
+    width: 40%;
+}
+.logo img{
+    width: 100%;
+}
+.logo{
+    position: relative;
+    text-align: end;
+    color: #ff0;
+    margin-bottom: 90px;
+}
+.logo span{
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    right: -5%;
+    animation: escala 0.9s infinite;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn button{
+    font-family: 'MinecraftiaRegular';
+    background-color:gray;
+    border-color: rgb(49, 49, 49);
+    border-spacing: 6px;
+    color: #fff;
+    padding: 8px;
+    font-size: 20px;
+}
+.options{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.options button{
+    background-color:gray;
+    border-color: rgb(49, 49, 49);
+    border-spacing: 6px;
+    color: #fff;
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'MinecraftiaRegular';
+}
+.btn button:hover{
+    background-color: rgb(69, 111, 169);
+    color: #ff0;
+}
+.options button:hover{
+    background-color: rgb(69, 111, 169);
+    color: #ff0;
+}
+@keyframes escala {
+    0%{
+        transform: scale(1) rotate(345deg);
+    }
+    50%{
+        transform: scale(1.5) rotate(345deg);
+    }
+    100%{
+        transform: scale(1) rotate(345deg);
+    }
+}
